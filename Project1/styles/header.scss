@@ -1,0 +1,81 @@
+@import 'variables.scss';
+.header {
+  width: $workZone-height;
+  height: 62px;
+  margin: auto;
+  display: flex;
+  &_button {
+    background-color: $color-secondary;
+    width: 160px;
+    height: 48px;
+    color: #fff;
+    font-weight: 700;
+    font-size: $fontSize;
+    line-height: 13px;
+    border-radius: 2px;
+    border: none;
+  }
+  &_ground {
+    padding-top: 39px;
+    background-color: $color-primary;
+  }
+}
+picture {
+  position: relative;
+}
+.logo {
+  display: flex;
+  &_base {
+    width: 63px;
+    height: 60px;
+    margin-right: 12px;
+    border-radius: 14px;
+  }
+  &_image {
+    position: absolute;
+    top: 10px;
+    left: 13px;
+  }
+  &_name {
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: 700;
+    color: $textColor;
+  }
+  &_description {
+    line-height: 25px;
+    font-size: $fontSize;
+    color: $textColor;
+    opacity: 0.6;
+  }
+  &_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.navigation {
+  margin-left: auto;
+  margin-top: 7px;
+  margin-right: 75px;
+  &_item {
+    color: $textColor;
+    line-height: 25px;
+    text-decoration: none;
+    font-size: $fontSize;
+    margin-right: 50px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &_selected {
+      font-weight: 700;
+    }
+  }
+  &_arrow {
+    display: inline-block;
+    height: 5px;
+    width: 8px;
+    margin-left: 11px;
+    background-image: url(image/arrow.png);
+  }
+}

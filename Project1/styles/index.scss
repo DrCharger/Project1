@@ -1,0 +1,13 @@
+body {
+  font-family: 'Work Sans', monospace;
+}
+* {
+  box-sizing: border-box;
+}
+.page {
+  width: 1400px;
+  margin: auto;
+}
+@import 'header.scss';
+
+@import 'footer.scss';
