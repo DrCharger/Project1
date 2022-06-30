@@ -9,6 +9,9 @@ body {
 .page {
   width: 1400px;
   margin: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -93,6 +96,103 @@ picture {
   width: 8px;
   margin-left: 11px;
   background-image: url(image/arrow.png);
+}
+
+.footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+}
+.footer_nav {
+  width: 1140px;
+  height: 338px;
+  margin: 0 auto;
+  display: flex;
+}
+.footer_nav_about-company {
+  margin-top: 44px;
+}
+.footer_nav_about-company-Text {
+  font-size: 18px;
+  line-height: 26px;
+  width: 360px;
+  color: #2b292d;
+  opacity: 0.6;
+  margin-bottom: 25px;
+}
+.footer_line {
+  border: 0.5px solid #2b292d;
+  opacity: 0.1;
+  margin: 0;
+}
+.footer_links {
+  width: 1140px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.footer_terms {
+  line-height: 50px;
+  font-size: 14px;
+}
+.footer_terms_items {
+  text-decoration: none;
+  color: #2b292d;
+  opacity: 0.6;
+  margin-right: 22px;
+}
+.footer_terms:last-child {
+  margin-right: 0;
+}
+
+.downloads {
+  margin-right: 10px;
+}
+
+.additional-nav {
+  margin-top: 60px;
+  margin-left: auto;
+  display: flex;
+}
+.additional-nav_-column {
+  margin-right: 29px;
+}
+
+.nav_links {
+  width: 265px;
+}
+.nav_links-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  color: #2b292d;
+}
+.nav_links-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 18px;
+}
+.nav_links-list-item {
+  font-size: 18px;
+  line-height: 30px;
+  color: #2b292d;
+  opacity: 0.6;
+}
+
+.social-media {
+  height: 18px;
+  margin-left: auto;
+}
+.social-media-all {
+  display: inline-block;
+  height: 17px;
+  width: 18px;
+  margin-right: 20px;
+}
+.social-media-linkedin {
+  margin-right: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
