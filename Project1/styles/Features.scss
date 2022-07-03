@@ -1,0 +1,91 @@
+@import 'variables.scss';
+
+.features {
+  @include small {
+    display: none;
+  }
+  &_block {
+    margin-right: 128px;
+    width: 460px;
+    position: relative;
+  }
+  &-hide-image {
+    position: absolute;
+    top: 280px;
+    left: -134px;
+  }
+  display: flex;
+  margin-left: 126px;
+  &-develop_users {
+    display: flex;
+  }
+  &_subtitle {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    color: #009b4d;
+    margin-bottom: 24px;
+    margin-top: 0;
+  }
+  &_title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+    color: #2b292d;
+    margin-top: 24px;
+    margin-bottom: 30px;
+  }
+  &_description {
+    font-size: 24px;
+    line-height: 34px;
+    color: #2b292d;
+    margin-bottom: 42px;
+  }
+  &_advantage {
+    font-size: 18px;
+    line-height: 26px;
+    color: $textColor;
+  }
+  &-develop_users {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #2b292d;
+    padding-top: 22px;
+    border-bottom: 1px solid rgba($color: #2b292d, $alpha: 0.15);
+
+    &-text {
+      margin: 0;
+      padding-bottom: 22px;
+      padding-left: 15px;
+    }
+  }
+  &-image {
+    width: 23px;
+    height: 25px;
+  }
+  &_invision-image {
+    margin-top: 5px;
+    margin-bottom: 103px;
+    filter: drop-shadow(0px 4px 16px rgba(44, 50, 65, 0.08));
+  }
+}
+.compass_title {
+  display: flex;
+  &_logo {
+    width: 24px;
+    height: 24px;
+  }
+}
+.acquire {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: $color-third;
+  margin: 0;
+  margin-left: 15px;
+}
+.border-line {
+  border-top: 3px solid $color-third;
+}

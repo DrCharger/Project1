@@ -1,7 +1,35 @@
 $color-primary: #f3c6bd;
 $color-secondary: #3040c4;
+$color-third: #3142c6;
 $textColor: #2b292d;
 
 $workZone-height: 1140px;
 
 $fontSize: 18px;
+@mixin large {
+  @media screen and (min-width: 600px) {
+    @content;
+  }
+}
+@mixin small {
+  @media screen and (max-width: 599px) {
+    @content;
+  }
+}
+
+.action_button {
+  background-color: $color-secondary;
+  width: 160px;
+  height: 48px;
+  color: #fff;
+  font-weight: 700;
+  font-size: $fontSize;
+  line-height: 13px;
+  border-radius: 2px;
+  border: none;
+  @include small {
+    width: 91%;
+    margin: 15px;
+    margin-top: 30px;
+  }
+}

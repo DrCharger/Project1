@@ -1,16 +1,25 @@
+@import 'variables.scss';
 body {
   font-family: 'Work Sans', monospace;
 }
 * {
   box-sizing: border-box;
 }
+
 .page {
   width: 1400px;
   margin: auto;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  @include small {
+    width: 100%;
+    overflow-x: hidden;
+  }
 }
 @import 'header.scss';
 
+@import 'about';
+@import 'features-mobile.scss';
+@import 'Features.scss';
 @import 'footer.scss';

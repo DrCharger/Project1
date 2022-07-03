@@ -4,25 +4,32 @@
   height: 62px;
   margin: auto;
   display: flex;
-  &_button {
-    background-color: $color-secondary;
-    width: 160px;
-    height: 48px;
-    color: #fff;
-    font-weight: 700;
-    font-size: $fontSize;
-    line-height: 13px;
-    border-radius: 2px;
-    border: none;
+  @include small {
+    width: 100%;
+    height: 64px;
+    background-color: #fff;
   }
   &_ground {
-    padding-top: 39px;
+    @include large {
+      padding-top: 39px;
+      background-color: $color-primary;
+    }
     background-color: $color-primary;
   }
+  &_hidden {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    width: 58px;
+    height: 100%;
+    border-left: 1px solid #00000026;
+    @include large {
+      display: none;
+    }
+  }
 }
-picture {
-  position: relative;
-}
+
 .logo {
   display: flex;
   &_base {
@@ -32,9 +39,13 @@ picture {
     border-radius: 14px;
   }
   &_image {
-    position: absolute;
-    top: 10px;
-    left: 13px;
+    margin-right: 15px;
+    @include small {
+      width: 48px;
+      height: 48px;
+      margin-left: 15px;
+      margin-top: 8px;
+    }
   }
   &_name {
     line-height: 25px;
@@ -43,10 +54,14 @@ picture {
     color: $textColor;
   }
   &_description {
+    display: none;
     line-height: 25px;
     font-size: $fontSize;
     color: $textColor;
     opacity: 0.6;
+    @include large {
+      display: block;
+    }
   }
   &_block {
     display: flex;
@@ -54,10 +69,20 @@ picture {
     justify-content: center;
   }
 }
+.btn {
+  display: none;
+  @include large {
+    display: block;
+  }
+}
 .navigation {
+  display: none;
   margin-left: auto;
   margin-top: 7px;
   margin-right: 75px;
+  @include large {
+    display: block;
+  }
   &_item {
     color: $textColor;
     line-height: 25px;
@@ -77,5 +102,81 @@ picture {
     width: 8px;
     margin-left: 11px;
     background-image: url(image/arrow.png);
+  }
+}
+.section {
+  width: 100%;
+
+  @include large {
+    width: $workZone-height;
+    margin: auto;
+    position: relative;
+    padding-bottom: 126px;
+  }
+  &_button {
+    background-color: #fff;
+    width: 160px;
+    height: 48px;
+    color: $color-secondary;
+    font-weight: 700;
+    font-size: $fontSize;
+    line-height: 13px;
+    border-radius: 2px;
+    border: none;
+    margin-left: 10px;
+
+    @include small {
+      width: 91%;
+      margin-bottom: 33px;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+  &_image {
+    width: 100%;
+    margin-bottom: 36px;
+    @include large {
+      width: 796px;
+      height: 448px;
+      position: absolute;
+      left: 450px;
+      top: 8px;
+      z-index: 0;
+    }
+  }
+  &_header {
+    max-width: 100%;
+    margin-top: 35px;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: -0.3125px;
+    color: $textColor;
+    margin-left: 15px;
+    margin-right: 15px;
+    @include large {
+      z-index: 1;
+      width: 754px;
+      margin-bottom: 34px;
+      margin-left: 0px;
+      position: relative;
+      font-size: 80px;
+      line-height: 78px;
+      letter-spacing: -0.5px;
+    }
+  }
+  &_paragraph {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 24px;
+    line-height: 34px;
+    color: $textColor;
+    max-width: 100%;
+    margin-bottom: 30px;
+    @include large {
+      width: 456px;
+      margin-bottom: 58px;
+    }
   }
 }
