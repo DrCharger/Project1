@@ -7,12 +7,12 @@ $workZone-height: 1140px;
 
 $fontSize: 18px;
 @mixin large {
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 1400px) {
     @content;
   }
 }
 @mixin small {
-  @media screen and (max-width: 599px) {
+  @media screen and (max-width: 1399px) {
     @content;
   }
 }

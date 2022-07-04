@@ -7,7 +7,7 @@ body {
 }
 
 .page {
-  width: 1400px;
+  max-width: 1400px;
   margin: auto;
   min-height: 100vh;
   display: flex;
@@ -18,8 +18,10 @@ body {
   }
 }
 @import 'header.scss';
-
 @import 'about';
 @import 'features-mobile.scss';
 @import 'Features.scss';
 @import 'footer.scss';
+@import 'team-inbox.scss';
+@import 'comunicate.scss';
+@import 'visitors.scss';

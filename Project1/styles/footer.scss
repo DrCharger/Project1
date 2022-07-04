@@ -1,23 +1,32 @@
-@import 'variables.scss';
 .footer {
   margin-top: auto;
   display: flex;
   flex-direction: column;
 
   &_nav {
-    width: $workZone-height;
-    height: 338px;
-    margin: 0 auto;
-    display: flex;
+    @include large {
+      width: $workZone-height;
+      height: 338px;
+      margin: 0 auto;
+      display: flex;
+    }
+    width: 100%;
     &_about-company {
-      margin-top: 44px;
+      @include large {
+        margin-top: 44px;
+      }
+
       &-Text {
-        font-size: $fontSize;
-        line-height: 26px;
-        width: 360px;
-        color: $textColor;
-        opacity: 0.6;
-        margin-bottom: 25px;
+        display: none;
+        @include large {
+          display: block;
+          font-size: $fontSize;
+          line-height: 26px;
+          width: 360px;
+          color: $textColor;
+          opacity: 0.6;
+          margin-bottom: 25px;
+        }
       }
     }
   }
@@ -25,17 +34,29 @@
     border: 0.5px solid $textColor;
     opacity: 0.1;
     margin: 0;
+    @include small {
+      display: none;
+    }
   }
   &_links {
-    width: $workZone-height;
-    height: 50px;
-    margin: 0 auto;
+    @include large {
+      width: $workZone-height;
+      height: 50px;
+      margin: 0 auto;
+      align-items: center;
+      flex-direction: row;
+    }
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    width: 100%;
   }
   &_terms {
     line-height: 50px;
     font-size: 14px;
+    @include small {
+      margin-top: 30px;
+      margin-left: 15px;
+    }
     &_items {
       text-decoration: none;
       color: $textColor;
@@ -49,8 +70,14 @@
 }
 .downloads {
   margin-right: 10px;
+  @include small {
+    display: none;
+  }
 }
 .additional-nav {
+  @include small {
+    display: none;
+  }
   margin-top: 60px;
   margin-left: auto;
   display: flex;
@@ -81,7 +108,11 @@
 }
 .social-media {
   height: $fontSize;
-  margin-left: auto;
+  margin: 30px 15px 22px;
+
+  @include large {
+    margin-left: auto;
+  }
   &-all {
     display: inline-block;
     height: $fontSize - 1px;
@@ -90,5 +121,94 @@
   }
   &-linkedin {
     margin-right: 0;
+  }
+}
+.logo {
+  @include small {
+    display: none;
+  }
+}
+.vertical {
+  &-logo {
+    @include large {
+      display: none;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &_base {
+      margin-top: 40px;
+    }
+    &_block {
+      margin-top: 20px;
+    }
+    &_name {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 25px;
+      color: $textColor;
+      text-align: center;
+    }
+    &_description {
+      font-size: 18px;
+      line-height: 25px;
+      color: $textColor;
+      text-align: center;
+      opacity: 0.6;
+    }
+  }
+  &-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-downloads {
+    @include large {
+      display: none;
+    }
+    margin-top: 30px;
+    &:first-child {
+      margin-right: 10px;
+    }
+    &-line {
+      @include large {
+        display: none;
+      }
+      border-top: 1px solid #e3e3e3;
+      margin-top: 40px;
+    }
+  }
+  &-additional-nav {
+    @include large {
+      display: none;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &_nav_links {
+    display: flex;
+    flex-direction: column;
+    width: 91%;
+    &-title {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 28px;
+      color: $textColor;
+      margin-top: 30px;
+      margin-bottom: 18px;
+    }
+    &-list {
+      color: rgba(43, 41, 45, 0.6);
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      &-item {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
   }
 }
