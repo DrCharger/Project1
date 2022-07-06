@@ -1,0 +1,132 @@
+.hiring {
+	margin: 50px 15px;
+	@include large {
+		margin: 110px 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	&_title {
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 40px;
+		text-align: center;
+		letter-spacing: -0.357143px;
+		color: #2b292d;
+		margin: 0;
+		margin-bottom: 18px;
+		@include large {
+			font-size: 56px;
+			line-height: 56px;
+			letter-spacing: -0.5px;
+			margin-bottom: 20px;
+		}
+	}
+	&_description {
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 34px;
+		text-align: center;
+		color: #2b292d;
+		margin: 0;
+		margin-bottom: 30px;
+		@include large {
+			max-width: 555px;
+		}
+	}
+	&_btn {
+		margin: 0;
+		margin-bottom: 39px;
+		@include large {
+			width: 250px;
+			margin-bottom: 110px;
+		}
+	}
+	&_boxmode {
+		border: 1px solid rgba(43, 41, 45, 0.2);
+		border-radius: 8px;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 15px;
+		background-color: #fff;
+		@include large {
+			width: 50%;
+			&:hover {
+				cursor: pointer;
+				background-color: #3141c5;
+				box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15),
+					0px 11px 55px rgba(0, 0, 0, 0.07);
+				& .hiring_boxmode_about_prof {
+					color: #fff;
+				}
+				& .hiring_boxmode_about_city {
+					color: #fff;
+					opacity: 1;
+				}
+				& .hiring_boxmode_grey {
+					background: #3141c5;
+					&_black {
+						display: none;
+					}
+					&_white {
+						display: block;
+					}
+				}
+			}
+		}
+		&_about {
+			flex-grow: 1;
+			height: 140px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding: 20px;
+
+			@include large {
+				flex-direction: row;
+				height: auto;
+				justify-content: space-between;
+				padding: 30px;
+			}
+			&_prof {
+				font-weight: 700;
+				font-size: 22px;
+				line-height: 28px;
+				color: #2b292d;
+				margin: 0;
+				margin-bottom: 7px;
+				@include large {
+					margin: 0;
+				}
+			}
+			&_city {
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 22px;
+				color: #2b292d;
+				opacity: 0.6;
+				margin: 0;
+			}
+		}
+		&_grey {
+			display: flex;
+			background-color: rgba(213, 212, 213, 1);
+			justify-content: center;
+			align-items: center;
+			border-radius: 0px 8px 8px 0px;
+			width: 50px;
+			@include large {
+				background-color: #fff;
+			}
+			&_white {
+				@include large {
+					display: none;
+				}
+				@include small {
+					display: none;
+				}
+			}
+		}
+	}
+}
