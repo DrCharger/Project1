@@ -82,12 +82,12 @@ body {
 .logo_image {
   width: 60px;
   height: 60px;
+  margin-left: 15px;
 }
 @media screen and (max-width: 1399px) {
   .logo_image {
     width: 48px;
     height: 48px;
-    margin-left: 15px;
     margin-top: 8px;
     margin-right: 13px;
   }
@@ -114,6 +114,11 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+@media screen and (min-width: 1400px) {
+  .logo_block {
+    margin-left: 15px;
+  }
+}
 
 .btn {
   display: none;
@@ -121,18 +126,19 @@ body {
 @media screen and (min-width: 1400px) {
   .btn {
     display: block;
+    margin: auto 0;
   }
 }
 
 .navigation {
   display: none;
   margin-left: auto;
-  margin-top: 7px;
   margin-right: 75px;
 }
 @media screen and (min-width: 1400px) {
   .navigation {
-    display: block;
+    display: flex;
+    align-items: center;
   }
 }
 .navigation_item {
@@ -1091,7 +1097,16 @@ body {
   background-blend-mode: overlay, normal;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
   border-radius: 2px;
-  margin-right: 10px;
+}
+@media screen and (max-width: 1399px) {
+  .audience_button1 {
+    margin-bottom: 12px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .audience_button1 {
+    margin-right: 10px;
+  }
 }
 .audience_fig {
   font-weight: 700;
@@ -1134,14 +1149,15 @@ body {
 }
 .audience_fig_image {
   max-width: 100%;
-  margin: 22px auto;
+  margin: auto;
 }
 .audience_fig_text {
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
   text-align: center;
-  color: #2b292d;
+  color: rgb(43, 41, 45);
+  margin-top: 22px;
 }
 
 .fig-box {
