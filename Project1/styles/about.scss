@@ -1,75 +1,75 @@
 .about {
-  display: flex;
-  flex-direction: column;
-  background-color: #f4f5f7;
-  max-width: 100%;
-  padding: 46px 15px 30px 15px;
-  @include large {
-    flex-direction: row;
-    justify-content: center;
-  }
+	display: flex;
+	flex-direction: column;
+	background-color: $color-light;
+	max-width: 100%;
+	padding: $unit * 4.6 $unit * 1.5 $unit * 3 $unit * 1.5;
+	@include large {
+		flex-direction: row;
+		justify-content: center;
+	}
 }
 .article {
-  font-size: 22px;
-  line-height: 32px;
-  color: $textColor;
-  width: 100%;
+	font-size: $fontSize + 2;
+	line-height: $unit * 3.2;
+	color: $textColor;
+	width: 100%;
 
-  margin-bottom: 20px;
-  @include large {
-    width: 555px;
-    margin-left: 30px;
-    padding-top: 77px;
-    padding-bottom: 76px;
-  }
-  &_title {
-    margin: 0;
-  }
-  &_paragraph {
-    margin: 0;
-    margin-top: 6px;
-  }
+	margin-bottom: $unit * 2;
+	@include large {
+		width: $m-width;
+		margin-left: $unit * 3;
+		padding-top: $unit * 7.7;
+		padding-bottom: $unit * 7.6;
+	}
+	&_title {
+		margin: 0;
+	}
+	&_paragraph {
+		margin: 0;
+		margin-top: 6px;
+	}
 }
 .Logos_section {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
 
-  &_box {
-    display: flex;
+	&_box {
+		display: flex;
 
-    @include large {
-      flex: 1;
-      justify-content: space-around;
-    }
-  }
-  &_item {
-    height: 94px;
-    width: 104px;
-    border-bottom: 1px solid #e3e3e3;
-    border-right: 1px solid #e3e3e3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-    @include large {
-      border: none;
-    }
-    &:last-child {
-      border-right: none;
-    }
-  }
-  &_img {
-    max-width: 85%;
-    filter: brightness(0);
-  }
-  @include large {
-    width: $workZone-height;
-    margin: auto;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 30px;
-    padding-bottom: 80px;
-    flex-direction: row;
-  }
+		@include large {
+			flex: 1;
+			justify-content: space-around;
+		}
+	}
+	&_item {
+		height: $unit * 9.4;
+		width: $l-unit * 1.04;
+		border-bottom: 1px solid $color-light-grey;
+		border-right: 1px solid $color-light-grey;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-grow: 1;
+		@include large {
+			border: none;
+		}
+		&:last-child {
+			border-right: none;
+		}
+	}
+	&_img {
+		max-width: 85%;
+		filter: brightness(0);
+	}
+	@include large {
+		width: $workZone-height;
+		margin: auto;
+		align-items: center;
+		justify-content: space-between;
+		padding-top: $unit * 3;
+		padding-bottom: $unit * 8;
+		flex-direction: row;
+	}
 }

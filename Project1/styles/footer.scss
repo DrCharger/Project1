@@ -107,7 +107,7 @@
 	}
 }
 .social-media {
-	height: $fontSize;
+	height: $fontSize - 2;
 	margin: 30px 15px 22px;
 
 	@include large {
@@ -115,8 +115,8 @@
 	}
 	&-all {
 		display: inline-block;
-		height: $fontSize - 1px;
-		width: $fontSize;
+		height: $fontSize - 3;
+		width: $fontSize - 2;
 		margin-right: 20px;
 	}
 	&-linkedin {
@@ -153,9 +153,8 @@
 		&_description {
 			font-size: 18px;
 			line-height: 25px;
-			color: $textColor;
+			color: $textColor-opac;
 			text-align: center;
-			opacity: 0.6;
 		}
 	}
 	&-item {
@@ -175,7 +174,7 @@
 			@include large {
 				display: none;
 			}
-			border-top: 1px solid #e3e3e3;
+			border-top: 1px solid $color-light-grey;
 			margin-top: 40px;
 		}
 	}
@@ -200,7 +199,7 @@
 			margin-bottom: 18px;
 		}
 		&-list {
-			color: rgba(43, 41, 45, 0.6);
+			color: $textColor-opac;
 			list-style-type: none;
 			margin: 0;
 			padding: 0;

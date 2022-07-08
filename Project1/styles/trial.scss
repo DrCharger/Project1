@@ -1,6 +1,6 @@
 .trial {
 	padding: 50px 15px;
-	background-color: rgba(244, 245, 247, 1);
+	background-color: $color-light;
 	@include large {
 		display: flex;
 		padding: 73px 0;
@@ -19,7 +19,7 @@
 	}
 	&_box {
 		@include large {
-			max-width: 555px;
+			max-width: $m-width;
 			margin-left: 122px;
 		}
 	}
@@ -54,7 +54,7 @@
 	}
 	&_input {
 		height: 48px;
-		border: 1px solid rgba(43, 41, 45, 0.2);
+		border: 1px solid $color-grey;
 		border-radius: 2px;
 		width: 100%;
 		margin: 0;
@@ -65,7 +65,7 @@
 			margin-bottom: 10px;
 		}
 		&::placeholder {
-			color: rgb(0, 0, 0);
+			color: $color-black;
 			text-align: center;
 		}
 	}
@@ -73,7 +73,7 @@
 		background-color: $color-secondary;
 		width: 160px;
 		height: 48px;
-		color: #fff;
+		color: $color-white;
 		font-weight: 700;
 		font-size: $fontSize;
 		line-height: 13px;
@@ -91,9 +91,9 @@
 		font-weight: 400;
 		font-size: 14px;
 		line-height: 22px;
-		color: rgba(43, 41, 45, 0.6);
+		color: $textColor-opac;
 		&_link {
-			color: rgba(49, 66, 198, 1);
+			color: $color-third;
 		}
 	}
 }

@@ -1,7 +1,7 @@
 .trusted {
 	margin: 39px 15px 0px;
 	padding-bottom: 50px;
-	border-bottom: 1px solid rgba(227, 227, 227, 1);
+	border-bottom: 1px solid $color-light-grey;
 	@include large {
 		margin: 0;
 		display: flex;
@@ -13,7 +13,7 @@
 		font-weight: 700;
 		font-size: 24px;
 		line-height: 30px;
-		color: #3142c6;
+		color: $color-third;
 		margin: 0;
 		margin-bottom: 29px;
 	}
@@ -31,7 +31,7 @@
 	&_report {
 		font-size: 16px;
 		line-height: 24px;
-		color: #2b292d;
+		color: $textColor;
 		margin: 0;
 		margin-bottom: 40px;
 		&_name {
@@ -53,7 +53,7 @@
 			height: 12px;
 			width: 12px;
 			border-radius: 50%;
-			background-color: rgba(43, 41, 45, 0.2);
+			background-color: $color-light-grey;
 			margin-right: 20px;
 			@include large {
 				height: 8px;
@@ -63,7 +63,7 @@
 				margin-right: 0px;
 			}
 			&:hover {
-				background-color: rgba(49, 66, 197, 1);
+				background-color: $color-third;
 			}
 		}
 	}
