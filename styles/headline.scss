@@ -5,11 +5,11 @@
     width: $workZone-height;
     margin: auto;
     position: relative;
-    padding-bottom: 126px;
+    padding-bottom: 176px;
   }
   &_box {
     @include small {
-      padding: 35px 15px;
+      padding: 0 15px;
     }
   }
   &_button {
@@ -22,7 +22,9 @@
     line-height: 13px;
     border-radius: 2px;
     border: none;
-
+    @include large {
+      margin-left: 10px;
+    }
     @include small {
       width: 100%;
       margin-bottom: 33px;
@@ -30,13 +32,17 @@
   }
   &_image {
     width: 100%;
+
     @include large {
       width: 796px;
       height: 448px;
       position: absolute;
       left: 450px;
-      top: 8px;
+      top: 0px;
       z-index: 0;
+    }
+    @include small {
+      padding-bottom: 36px;
     }
   }
   &_header {
@@ -52,7 +58,6 @@
       z-index: 1;
       width: 754px;
       margin-bottom: 34px;
-      margin-left: 0px;
       position: relative;
       font-size: 80px;
       line-height: 78px;
