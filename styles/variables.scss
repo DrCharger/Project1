@@ -22,29 +22,29 @@ $fontSize: 20px;
 
 $m-width: 555px;
 @mixin large {
-	@media screen and (min-width: 1400px) {
-		@content;
-	}
+  @media screen and (min-width: 1400px) {
+    @content;
+  }
 }
 @mixin small {
-	@media screen and (max-width: 1399px) {
-		@content;
-	}
+  @media screen and (max-width: 1399px) {
+    @content;
+  }
 }
 
 .action_button {
-	background-color: $color-secondary;
-	width: 160px;
-	height: 48px;
-	color: #fff;
-	font-weight: 700;
-	font-size: $fontSize;
-	line-height: 13px;
-	border-radius: 2px;
-	border: none;
-	@include small {
-		width: 91%;
-		margin: 15px;
-		margin-top: 30px;
-	}
+  background-color: $color-secondary;
+  width: 160px;
+  height: 48px;
+  color: $color-white;
+  font-weight: 700;
+  font-size: $fontSize;
+  line-height: 13px;
+  border-radius: 2px;
+  border: none;
+  @include small {
+    width: 91%;
+    margin: 15px;
+    margin-top: 30px;
+  }
 }

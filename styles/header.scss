@@ -31,14 +31,12 @@
 
 .logo {
   display: flex;
-  &_base {
-    width: 63px;
-    height: 60px;
-    margin-right: 12px;
-    border-radius: 14px;
-  }
+  margin-left: 4px;
+
   &_image {
     margin-right: 15px;
+    width: 60px;
+    height: 60px;
     @include small {
       width: 48px;
       height: 48px;

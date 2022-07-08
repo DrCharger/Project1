@@ -2,7 +2,7 @@
   background-color: rgb(48, 64, 196);
   width: 160px;
   height: 48px;
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-weight: 700;
   font-size: 20px;
   line-height: 13px;
@@ -78,15 +78,12 @@ body {
 
 .logo {
   display: flex;
-}
-.logo_base {
-  width: 63px;
-  height: 60px;
-  margin-right: 12px;
-  border-radius: 14px;
+  margin-left: 4px;
 }
 .logo_image {
   margin-right: 15px;
+  width: 60px;
+  height: 60px;
 }
 @media screen and (max-width: 1399px) {
   .logo_image {
@@ -389,7 +386,7 @@ body {
   background-color: rgb(48, 64, 196);
   width: 160px;
   height: 48px;
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-weight: 700;
   font-size: 20px;
   line-height: 13px;
