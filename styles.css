@@ -545,7 +545,7 @@ body {
   }
 }
 .footer_line {
-  border: 0.5px solid rgb(43, 41, 45);
+  border-top: 1px solid rgb(43, 41, 45);
   opacity: 0.1;
   margin: 0;
 }
@@ -632,7 +632,7 @@ body {
 
 .social-media {
   height: 18px;
-  margin: 30px 15px 22px;
+  margin: 16px 0px 17px;
 }
 @media screen and (min-width: 1400px) {
   .social-media {

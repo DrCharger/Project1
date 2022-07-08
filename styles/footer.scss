@@ -33,7 +33,7 @@
     }
   }
   &_line {
-    border: 0.5px solid $textColor;
+    border-top: 1px solid $textColor;
     opacity: 0.1;
     margin: 0;
     @include small {
@@ -111,7 +111,7 @@
 }
 .social-media {
   height: $fontSize - 2;
-  margin: 30px 15px 22px;
+  margin: 16px 0px 17px;
 
   @include large {
     margin-left: auto;
