@@ -14,8 +14,9 @@
     line-height: 34px;
     color: $textColor;
     text-align: center;
+    margin: 0;
+    margin-bottom: 17px;
     @include large {
-      margin: 0;
       margin-bottom: 24px;
     }
   }
@@ -26,6 +27,8 @@
     letter-spacing: -0.357143px;
     color: $textColor;
     text-align: center;
+    margin: 0;
+    margin-bottom: 18px;
     @include large {
       margin: 0;
       margin-bottom: 30px;
@@ -41,6 +44,8 @@
     line-height: 34px;
     color: $textColor;
     text-align: center;
+    margin: 0;
+    margin-bottom: 30px;
     @include large {
       margin: 0;
       margin-bottom: 34px;
@@ -58,6 +63,9 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
       inset 0px 1px 0px rgba(255, 255, 255, 0.1);
     border-radius: 2px;
+    margin: 0;
+    margin-bottom: 40px;
+    color: $color-black;
   }
   &_button1 {
     background: linear-gradient(
@@ -89,12 +97,17 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
       inset 0px 1px 0px rgba(255, 255, 255, 0.1);
     border-radius: 8px;
+    margin: 0;
+    margin-bottom: 15px;
     @include large {
       margin: 0;
       margin-right: 30px;
     }
     &:last-child {
       @include large {
+        margin: 0;
+      }
+      @include small {
         margin: 0;
       }
     }
@@ -120,5 +133,7 @@
   }
 }
 .vis_btn_box {
-  margin-bottom: 111px;
+  @include large {
+    margin-bottom: 111px;
+  }
 }

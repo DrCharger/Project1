@@ -1,136 +1,136 @@
 .comun {
-	margin: $l-unit/2 $unit * 1.5;
-	display: flex;
-	flex-direction: column;
-	@include large {
-		margin: $l-unit * 1.2 auto $l-unit * 1.1;
-	}
+  margin: 50px $unit * 1.5;
+  display: flex;
+  flex-direction: column;
+  @include large {
+    margin: $l-unit * 1.2 auto $l-unit * 1.1;
+  }
 
-	&_subtitle {
-		font-weight: 700;
-		font-size: $fontSize + 2;
-		line-height: $unit * 3.4;
-		color: $color-light-blue;
-		margin: 0;
-		margin-bottom: $unit * 1.7;
-		@include large {
-			margin-bottom: $unit * 2.4;
-		}
-	}
-	&_title {
-		font-weight: 700;
-		font-size: $fontSize * 2;
-		line-height: $unit * 4;
-		letter-spacing: -0.357143px;
-		color: $textColor;
-		margin: 0;
-		margin-bottom: $unit * 1.8;
-		@include large {
-			margin-bottom: $unit * 3;
-		}
-	}
-	&_description {
-		font-weight: 400;
-		font-size: $fontSize + 4;
-		line-height: $unit * 3.4;
-		color: $textColor;
-		margin: 0;
-		margin-bottom: $unit * 3;
-		@include large {
-			margin-bottom: $unit * 3.9;
-		}
-	}
-	&_fig {
-		margin: 0;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		margin-bottom: $unit * 4;
-		@include large {
-			max-width: $m-width - 130;
-			margin-bottom: $unit * 2.6;
-		}
-		&_image {
-			max-width: 100%;
-		}
-		&_text {
-			font-weight: 400;
-			font-size: $fontSize - 6;
-			line-height: $unit * 2.2;
-			text-align: center;
-			color: $textColor-opac;
-			text-align: center;
-			margin-right: auto;
-		}
-		&_line {
-			border-top: 1px solid $color-light-grey;
-			width: 50%;
-			margin-bottom: $unit * 3.3;
-			@include large {
-				width: $m-width - 405;
-				margin-bottom: $unit * 4.1;
-			}
-		}
-	}
-	&_about {
-		font-weight: 400;
-		font-size: $fontSize - 2;
-		line-height: $unit * 2.6;
-		color: $textColor;
-		@include large {
-			display: flex;
-			justify-content: space-around;
-		}
-		&_sub {
-			margin-bottom: $unit * 3.3;
-			@include large {
-				max-width: $m-width - 195;
-				margin-right: $unit * 3;
-			}
-		}
-		&_felx {
-			margin-bottom: $unit * 3.3;
-			@include large {
-				max-width: $m-width - 195;
-				margin-right: $unit * 3;
-			}
-		}
-		&_fast-communication {
-			@include large {
-				max-width: $m-width - 195;
-			}
-		}
-		&_link {
-			color: $color-secondary;
-			display: block;
-		}
-	}
+  &_subtitle {
+    font-weight: 700;
+    font-size: $fontSize + 2;
+    line-height: $unit * 3.4;
+    color: $color-light-blue;
+    margin: 0;
+    margin-bottom: $unit * 1.7;
+    @include large {
+      margin-bottom: $unit * 2.4;
+    }
+  }
+  &_title {
+    font-weight: 700;
+    font-size: $fontSize * 2;
+    line-height: $unit * 4;
+    letter-spacing: -0.357143px;
+    color: $textColor;
+    margin: 0;
+    margin-bottom: $unit * 1.8;
+    @include large {
+      margin-bottom: $unit * 3;
+    }
+  }
+  &_description {
+    font-weight: 400;
+    font-size: $fontSize + 4;
+    line-height: $unit * 3.4;
+    color: $textColor;
+    margin: 0;
+    margin-bottom: $unit * 3;
+    @include large {
+      margin-bottom: $unit * 3.9;
+    }
+  }
+  &_fig {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: $unit * 4;
+    @include large {
+      max-width: $m-width - 130;
+      margin-bottom: $unit * 2.6;
+    }
+    &_image {
+      max-width: 100%;
+    }
+    &_text {
+      font-weight: 400;
+      font-size: $fontSize - 6;
+      line-height: $unit * 2.2;
+      text-align: center;
+      color: $textColor-opac;
+      text-align: center;
+      margin-right: auto;
+    }
+    &_line {
+      border-top: 1px solid $color-light-grey;
+      width: 50%;
+      margin-bottom: $unit * 3.3;
+      @include large {
+        width: $m-width - 405;
+        margin-bottom: $unit * 4.1;
+      }
+    }
+  }
+  &_about {
+    font-weight: 400;
+    font-size: $fontSize - 2;
+    line-height: $unit * 2.6;
+    color: $textColor;
+    @include large {
+      display: flex;
+      justify-content: space-around;
+    }
+    &_sub {
+      margin-bottom: $unit * 3.3;
+      @include large {
+        max-width: $m-width - 195;
+        margin-right: $unit * 3;
+      }
+    }
+    &_felx {
+      margin-bottom: $unit * 3.3;
+      @include large {
+        max-width: $m-width - 195;
+        margin-right: $unit * 3;
+      }
+    }
+    &_fast-communication {
+      @include large {
+        max-width: $m-width - 195;
+      }
+    }
+    &_link {
+      color: $color-secondary;
+      display: block;
+    }
+  }
 }
 .comu_btn {
-	background-color: $color-secondary;
-	width: $m-width - 395;
-	height: $unit * 4.8;
-	color: #fff;
-	font-weight: 700;
-	font-size: $fontSize;
-	line-height: $unit * 1.3;
-	border-radius: 2px;
-	border: none;
-	margin-bottom: $unit * 4;
+  background-color: $color-secondary;
+  width: $m-width - 395;
+  height: $unit * 4.8;
+  color: #fff;
+  font-weight: 700;
+  font-size: $fontSize;
+  line-height: $unit * 1.3;
+  border-radius: 2px;
+  border: none;
+  margin-bottom: $unit * 4;
 }
 .vertical {
-	&-box {
-		@include large {
-			display: flex;
-		}
-	}
-	&-box2 {
-		@include large {
-			display: flex;
-			flex-direction: column;
-			max-width: $m-width - 93;
-			margin-right: $l-unit * 1.94;
-		}
-	}
+  &-box {
+    @include large {
+      display: flex;
+    }
+  }
+  &-box2 {
+    @include large {
+      display: flex;
+      flex-direction: column;
+      max-width: $m-width - 93;
+      margin-right: $l-unit * 1.94;
+    }
+  }
 }
