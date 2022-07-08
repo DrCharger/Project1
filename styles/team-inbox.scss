@@ -1,116 +1,112 @@
 .inbox {
-	background-color: $color-beige;
-	padding: 50px 15px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	@include large {
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		padding: 115px 0;
-	}
-	&_figure {
-		text-align: center;
+  background-color: $color-beige;
+  padding: 50px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include large {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 115px 0;
+  }
+  &_figure {
+    text-align: center;
+    &_image {
+      &_text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: $textColor-opac;
+      }
+    }
+    @include large {
+      margin: 0;
+      margin-right: 164px;
+      max-width: 100%;
+    }
+  }
 
-		@include large {
-			margin: 0;
-			margin-right: 164px;
-			max-width: 100%;
-		}
-	}
-	&_image {
-		&_text {
-			@include small {
-				display: none;
-			}
-			font-weight: 400;
-			font-size: 14px;
-			line-height: 22px;
-			color: $textColor-opac;
-		}
-	}
-
-	&_subtitle {
-		font-weight: 700;
-		font-size: 22px;
-		line-height: 34px;
-		color: $color-orange;
-		@include large {
-			max-width: 461px;
-			margin-bottom: 24px;
-			padding-left: 30px;
-		}
-	}
-	&_title {
-		font-weight: 700;
-		font-size: 40px;
-		line-height: 40px;
-		letter-spacing: -0.357143px;
-		color: $textColor;
-		@include large {
-			max-width: 461px;
-			margin-bottom: 30px;
-			padding-left: 30px;
-		}
-	}
-	&_description {
-		font-weight: 400;
-		font-size: 24px;
-		line-height: 34px;
-		color: $textColor;
-		@include large {
-			max-width: 461px;
-			margin-bottom: 44px;
-			padding-left: 30px;
-		}
-	}
-	&_report {
-		@include large {
-			max-width: 519px;
-		}
-		width: 100%;
-		padding: 30px 20px 25px;
-		background: linear-gradient(
-				180deg,
-				rgba(255, 255, 255, 0.05) 0%,
-				rgba(255, 255, 255, 1e-5) 100%
-			),
-			#ffffff;
-		background-blend-mode: overlay, normal;
-		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
-			inset 0px 1px 0px rgba(255, 255, 255, 0.1);
-		&_text {
-			font-weight: 400;
-			font-size: 20px;
-			line-height: 28px;
-			color: $textColor;
-			margin: 0;
-		}
-		&_cont {
-			display: flex;
-			margin-top: 26px;
-			&_avatar {
-				width: 40px;
-				height: 40px;
-				margin-right: 11px;
-			}
-		}
-		&_cont2 {
-			display: flex;
-			flex-direction: column;
-			&_name {
-				font-weight: 700;
-				font-size: 16px;
-				line-height: 22px;
-				color: $textColor;
-			}
-			&_prof {
-				font-weight: 400;
-				font-size: 16px;
-				line-height: 22px;
-				color: $textColor-opac;
-			}
-		}
-	}
+  &_subtitle {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    color: $color-orange;
+    @include large {
+      max-width: 461px;
+      margin-bottom: 24px;
+      padding-left: 30px;
+    }
+  }
+  &_title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.357143px;
+    color: $textColor;
+    @include large {
+      max-width: 461px;
+      margin-bottom: 30px;
+      padding-left: 30px;
+    }
+  }
+  &_description {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: $textColor;
+    @include large {
+      max-width: 461px;
+      margin-bottom: 44px;
+      padding-left: 30px;
+    }
+  }
+  &_report {
+    @include large {
+      max-width: 519px;
+    }
+    width: 100%;
+    padding: 30px 20px 25px;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.05) 0%,
+        rgba(255, 255, 255, 1e-5) 100%
+      ),
+      #ffffff;
+    background-blend-mode: overlay, normal;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+      inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    &_text {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      color: $textColor;
+      margin: 0;
+    }
+    &_cont {
+      display: flex;
+      margin-top: 26px;
+      &_avatar {
+        width: 40px;
+        height: 40px;
+        margin-right: 11px;
+      }
+    }
+    &_cont2 {
+      display: flex;
+      flex-direction: column;
+      &_name {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        color: $textColor;
+      }
+      &_prof {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: $textColor-opac;
+      }
+    }
+  }
 }
