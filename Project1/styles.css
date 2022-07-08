@@ -157,7 +157,7 @@ body {
   height: 5px;
   width: 8px;
   margin-left: 11px;
-  background-image: url(image/arrow.png);
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
 }
 
 .section {
@@ -641,6 +641,9 @@ body {
   margin-right: 0;
 }
 
+.ft-logo {
+  display: flex;
+}
 @media screen and (max-width: 1399px) {
   .ft-logo {
     display: none;
@@ -760,24 +763,6 @@ body {
     margin: 0;
     margin-right: 164px;
     max-width: 100%;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .inbox_image {
-    display: none;
-  }
-}
-@media screen and (max-width: 1399px) {
-  .inbox_image {
-    max-width: 100%;
-  }
-}
-.inbox_image-large {
-  margin-bottom: 15px;
-}
-@media screen and (max-width: 1399px) {
-  .inbox_image-large {
-    display: none;
   }
 }
 .inbox_image_text {
@@ -1132,10 +1117,6 @@ body {
 }
 .visitors_fig_image {
   max-width: 100%;
-  margin: 22px 76px;
-}
-.visitors_fig_imageTV {
-  max-width: 50%;
   margin: 22px 76px;
 }
 

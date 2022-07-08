@@ -124,6 +124,7 @@
 	}
 }
 .ft-logo {
+	display: flex;
 	@include small {
 		display: none;
 	}
