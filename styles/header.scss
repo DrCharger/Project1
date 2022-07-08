@@ -52,7 +52,7 @@
   &_description {
     display: none;
     line-height: 25px;
-    font-size: $fontSize;
+    font-size: $fontSize - 2;
     color: $textColor-opac;
     @include large {
       display: block;

@@ -70,15 +70,15 @@
     }
   }
   &_button1 {
-    background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0.05) 0%,
-        rgba(255, 255, 255, 1e-5) 100%
-      ),
-      #3040c4;
-    background-blend-mode: overlay, normal;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
-      inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    // background: linear-gradient(
+    //     180deg,
+    //     rgba(255, 255, 255, 0.05) 0%,
+    //     rgba(255, 255, 255, 1e-5) 100%
+    //   ),
+    //   #3040c4;
+    // background-blend-mode: overlay, normal;
+    // box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+    //   inset 0px 1px 0px rgba(255, 255, 255, 0.1);
     border-radius: 2px;
 
     @include small {
@@ -109,7 +109,7 @@
     margin: 0;
     margin-bottom: 15px;
     @include large {
-      margin: 0;
+      margin-top: auto;
       margin-right: 30px;
       width: 262px;
       height: 300px;
@@ -130,7 +130,7 @@
     }
     &_image {
       max-width: 100%;
-      margin: auto;
+      margin-top: 22px;
     }
     &_text {
       font-weight: 700;
