@@ -1,99 +1,99 @@
-.trial {
-	padding: 50px 15px;
-	background-color: $color-light;
-	@include large {
-		display: flex;
-		padding: 73px 0;
-		justify-content: center;
-		align-items: center;
-	}
+.order {
+  padding: 50px 15px;
+  background-color: $color-light;
+  @include large {
+    display: flex;
+    padding: 73px 0;
+    justify-content: center;
+    align-items: center;
+  }
 
-	&_image {
-		max-width: 100%;
-		display: block;
-		margin: auto;
-		margin-bottom: 40px;
-		@include large {
-			margin: 0;
-		}
-	}
-	&_box {
-		@include large {
-			max-width: $m-width;
-			margin-left: 122px;
-		}
-	}
-	&_title {
-		font-weight: 700;
-		font-size: 40px;
-		line-height: 40px;
-		text-align: center;
-		letter-spacing: -0.25px;
-		color: $textColor;
-		margin: 0;
-		margin-bottom: 18px;
-		@include large {
-			margin-bottom: 12px;
-		}
-	}
-	&_description {
-		font-weight: 400;
-		font-size: 22px;
-		line-height: 32px;
-		color: $textColor;
-		margin: 0;
-		margin-bottom: 79px;
-		@include large {
-			margin-bottom: 26px;
-		}
-	}
-	&_row {
-		@include large {
-			display: flex;
-		}
-	}
-	&_input {
-		height: 48px;
-		border: 1px solid $color-grey;
-		border-radius: 2px;
-		width: 100%;
-		margin: 0;
-		margin-bottom: 12px;
-		@include large {
-			flex-grow: 1;
-			margin-right: 10px;
-			margin-bottom: 10px;
-		}
-		&::placeholder {
-			color: $color-black;
-			text-align: center;
-		}
-	}
-	&_btn {
-		background-color: $color-secondary;
-		width: 160px;
-		height: 48px;
-		color: $color-white;
-		font-weight: 700;
-		font-size: $fontSize;
-		line-height: 13px;
-		border-radius: 2px;
-		border: none;
-		margin: 0;
-		margin-bottom: 10px;
-		flex-shrink: 0;
+  &_image {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+    @include large {
+      margin: 0;
+    }
+  }
+  &_box {
+    @include large {
+      max-width: $m-width;
+      margin-left: 122px;
+    }
+  }
+  &_title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.25px;
+    color: $textColor;
+    margin: 0;
+    margin-bottom: 18px;
+    @include large {
+      margin-bottom: 12px;
+    }
+  }
+  &_description {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    color: $textColor;
+    margin: 0;
+    margin-bottom: 79px;
+    @include large {
+      margin-bottom: 26px;
+    }
+  }
+  &_row {
+    @include large {
+      display: flex;
+    }
+  }
+  &_input {
+    height: 48px;
+    border: 1px solid $color-grey;
+    border-radius: 2px;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 12px;
+    @include large {
+      flex-grow: 1;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+    &::placeholder {
+      color: $color-black;
+      text-align: center;
+    }
+  }
+  &_btn {
+    background-color: $color-secondary;
+    width: 160px;
+    height: 48px;
+    color: $color-white;
+    font-weight: 700;
+    font-size: $fontSize;
+    line-height: 13px;
+    border-radius: 2px;
+    border: none;
+    margin: 0;
+    margin-bottom: 10px;
+    flex-shrink: 0;
 
-		@include small {
-			width: 100%;
-		}
-	}
-	&_text {
-		font-weight: 400;
-		font-size: 14px;
-		line-height: 22px;
-		color: $textColor-opac;
-		&_link {
-			color: $color-third;
-		}
-	}
+    @include small {
+      width: 100%;
+    }
+  }
+  &_text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: $textColor-opac;
+    &_link {
+      color: $color-third;
+    }
+  }
 }
