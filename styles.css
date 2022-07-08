@@ -160,18 +160,18 @@ body {
   background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
 }
 
-.section {
+.headline {
   width: 100%;
 }
 @media screen and (min-width: 1400px) {
-  .section {
+  .headline {
     width: 1140px;
     margin: auto;
     position: relative;
     padding-bottom: 126px;
   }
 }
-.section_button {
+.headline_button {
   background-color: rgb(255, 255, 255);
   width: 160px;
   height: 48px;
@@ -184,19 +184,19 @@ body {
   margin-left: 10px;
 }
 @media screen and (max-width: 1399px) {
-  .section_button {
+  .headline_button {
     width: 91%;
     margin-bottom: 33px;
     margin-left: 15px;
     margin-right: 15px;
   }
 }
-.section_image {
+.headline_image {
   width: 100%;
   margin-bottom: 36px;
 }
 @media screen and (min-width: 1400px) {
-  .section_image {
+  .headline_image {
     width: 796px;
     height: 448px;
     position: absolute;
@@ -205,7 +205,7 @@ body {
     z-index: 0;
   }
 }
-.section_header {
+.headline_header {
   max-width: 100%;
   margin-top: 35px;
   margin-bottom: 24px;
@@ -218,7 +218,7 @@ body {
   margin-right: 15px;
 }
 @media screen and (min-width: 1400px) {
-  .section_header {
+  .headline_header {
     z-index: 1;
     width: 754px;
     margin-bottom: 34px;
@@ -229,7 +229,7 @@ body {
     letter-spacing: -0.5px;
   }
 }
-.section_paragraph {
+.headline_paragraph {
   margin-left: 15px;
   margin-right: 15px;
   font-size: 24px;
@@ -239,7 +239,7 @@ body {
   margin-bottom: 30px;
 }
 @media screen and (min-width: 1400px) {
-  .section_paragraph {
+  .headline_paragraph {
     width: 456px;
     margin-bottom: 58px;
   }
@@ -758,22 +758,17 @@ body {
 .inbox_figure {
   text-align: center;
 }
-@media screen and (min-width: 1400px) {
-  .inbox_figure {
-    margin: 0;
-    margin-right: 164px;
-    max-width: 100%;
-  }
-}
-.inbox_image_text {
+.inbox_figure_image_text {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: rgba(43, 41, 45, 0.6);
 }
-@media screen and (max-width: 1399px) {
-  .inbox_image_text {
-    display: none;
+@media screen and (min-width: 1400px) {
+  .inbox_figure {
+    margin: 0;
+    margin-right: 164px;
+    max-width: 100%;
   }
 }
 .inbox_subtitle {
@@ -1015,12 +1010,12 @@ body {
   }
 }
 
-.visitors {
+.audience {
   background-color: rgba(0, 161, 198, 0.07);
   padding: 50px 15px;
 }
 @media screen and (min-width: 1400px) {
-  .visitors {
+  .audience {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1028,7 +1023,7 @@ body {
     padding: 108px 0;
   }
 }
-.visitors_subtitle {
+.audience_subtitle {
   font-weight: 700;
   font-size: 22px;
   line-height: 34px;
@@ -1036,12 +1031,12 @@ body {
   text-align: center;
 }
 @media screen and (min-width: 1400px) {
-  .visitors_subtitle {
+  .audience_subtitle {
     margin: 0;
     margin-bottom: 24px;
   }
 }
-.visitors_title {
+.audience_title {
   font-weight: 700;
   font-size: 40px;
   line-height: 40px;
@@ -1050,7 +1045,7 @@ body {
   text-align: center;
 }
 @media screen and (min-width: 1400px) {
-  .visitors_title {
+  .audience_title {
     margin: 0;
     margin-bottom: 30px;
     max-width: 555px;
@@ -1059,7 +1054,7 @@ body {
     letter-spacing: -0.5px;
   }
 }
-.visitors_description {
+.audience_description {
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
@@ -1067,25 +1062,25 @@ body {
   text-align: center;
 }
 @media screen and (min-width: 1400px) {
-  .visitors_description {
+  .audience_description {
     margin: 0;
     margin-bottom: 34px;
     max-width: 555px;
   }
 }
-.visitors_button2 {
+.audience_button2 {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #ffffff;
   background-blend-mode: overlay, normal;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
   border-radius: 2px;
 }
-.visitors_button1 {
+.audience_button1 {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #3040c4;
   background-blend-mode: overlay, normal;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
   border-radius: 2px;
 }
-.visitors_fig {
+.audience_fig {
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
@@ -1099,23 +1094,23 @@ body {
   border-radius: 8px;
 }
 @media screen and (min-width: 1400px) {
-  .visitors_fig {
+  .audience_fig {
     margin: 0;
     margin-right: 30px;
   }
 }
 @media screen and (min-width: 1400px) {
-  .visitors_fig:last-child {
+  .audience_fig:last-child {
     margin: 0;
   }
 }
-.visitors_fig:hover {
+.audience_fig:hover {
   background-color: rgb(48, 64, 196);
   box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15), 0px 11px 55px rgba(0, 0, 0, 0.07);
   border-radius: 8px;
   color: rgb(255, 255, 255);
 }
-.visitors_fig_image {
+.audience_fig_image {
   max-width: 100%;
   margin: 22px 76px;
 }
@@ -1224,36 +1219,36 @@ body {
   }
 }
 
-.trial {
+.order {
   padding: 50px 15px;
   background-color: rgb(244, 245, 247);
 }
 @media screen and (min-width: 1400px) {
-  .trial {
+  .order {
     display: flex;
     padding: 73px 0;
     justify-content: center;
     align-items: center;
   }
 }
-.trial_image {
+.order_image {
   max-width: 100%;
   display: block;
   margin: auto;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 1400px) {
-  .trial_image {
+  .order_image {
     margin: 0;
   }
 }
 @media screen and (min-width: 1400px) {
-  .trial_box {
+  .order_box {
     max-width: 555px;
     margin-left: 122px;
   }
 }
-.trial_title {
+.order_title {
   font-weight: 700;
   font-size: 40px;
   line-height: 40px;
@@ -1264,11 +1259,11 @@ body {
   margin-bottom: 18px;
 }
 @media screen and (min-width: 1400px) {
-  .trial_title {
+  .order_title {
     margin-bottom: 12px;
   }
 }
-.trial_description {
+.order_description {
   font-weight: 400;
   font-size: 22px;
   line-height: 32px;
@@ -1277,16 +1272,16 @@ body {
   margin-bottom: 79px;
 }
 @media screen and (min-width: 1400px) {
-  .trial_description {
+  .order_description {
     margin-bottom: 26px;
   }
 }
 @media screen and (min-width: 1400px) {
-  .trial_row {
+  .order_row {
     display: flex;
   }
 }
-.trial_input {
+.order_input {
   height: 48px;
   border: 1px solid rgb(213, 212, 213);
   border-radius: 2px;
@@ -1295,17 +1290,17 @@ body {
   margin-bottom: 12px;
 }
 @media screen and (min-width: 1400px) {
-  .trial_input {
+  .order_input {
     flex-grow: 1;
     margin-right: 10px;
     margin-bottom: 10px;
   }
 }
-.trial_input::placeholder {
+.order_input::placeholder {
   color: rgb(0, 0, 0);
   text-align: center;
 }
-.trial_btn {
+.order_btn {
   background-color: rgb(48, 64, 196);
   width: 160px;
   height: 48px;
@@ -1320,17 +1315,17 @@ body {
   flex-shrink: 0;
 }
 @media screen and (max-width: 1399px) {
-  .trial_btn {
+  .order_btn {
     width: 100%;
   }
 }
-.trial_text {
+.order_text {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: rgba(43, 41, 45, 0.6);
 }
-.trial_text_link {
+.order_text_link {
   color: rgb(49, 66, 198);
 }
 
