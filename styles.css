@@ -525,7 +525,7 @@ body {
 }
 @media screen and (min-width: 1400px) {
   .footer_nav_about-company {
-    margin-top: 44px;
+    margin-top: 40px;
   }
 }
 .footer_nav_about-company-Text {
@@ -540,6 +540,8 @@ body {
     color: rgb(43, 41, 45);
     opacity: 0.6;
     margin-bottom: 25px;
+    margin-top: 30px;
+    margin-right: 126px;
   }
 }
 .footer_line {
@@ -586,9 +588,6 @@ body {
   margin-right: 0;
 }
 
-.downloads {
-  margin-right: 10px;
-}
 @media screen and (max-width: 1399px) {
   .downloads {
     display: none;
@@ -596,8 +595,7 @@ body {
 }
 
 .additional-nav {
-  margin-top: 44px;
-  margin-left: auto;
+  margin-top: 40px;
   display: flex;
 }
 @media screen and (max-width: 1399px) {
@@ -611,6 +609,7 @@ body {
 
 .nav_links {
   width: 265px;
+  margin-right: 29px;
 }
 .nav_links-title {
   font-weight: 700;
